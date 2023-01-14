@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* font  */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-tittle {
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 10px;
+    /* flex-direction: column; */
+    border-radius: 10px;
+    
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.players {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+.palyer-name{
+    margin-left: 16px;
+    font-size: 18px ;
+}
+hr{
+    margin-top: 30px;
+}
+/*  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 150px;
+    row-gap: 26px;
+}
+.thumbail img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+    gap: 16px;
+}
+.bolg-tittle{
+    font-size: 20px;
+
+}
+.blog-author{
+    color: aquamarine;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: aquamarine;
+}
+
+.course-banner img{
+    width:225px;
+    height:104px;
+}
+.croush-info{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.main-order{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 24px;
+   
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        width: 100%;
+    }
+    .player{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      
+    }
+    .players{
+        justify-content: center;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        
+    }
+    .thumbail img{
+        
+    }
+    .main-order{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* table device
+  */
+  @media screen and (min-width:660px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .player{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      
+    }
+    .players{
+        justify-content: center;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        
+    }
+    .thumbail img{
+        
+    }
+    .main-order{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
